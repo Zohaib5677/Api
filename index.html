@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Customer Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        
+        <div class="alert alert-success" id="successAlert"></div>
+        <div class="alert alert-error" id="errorAlert"></div>
+        <div class="loading" id="loadingIndicator">Loading...</div>
+
+        <div class="form-container">
+            <input type="text" id="todoInput" placeholder="Enter new todo">
+            <button onclick="createTodo()">Add Todo</button>
+            <button onclick="fetchTodos()" class="fetch-btn">Refresh Todos</button>
+        </div>
+
+        <div class="todo-list" id="todoList">
+            <!-- Todo items will be inserted here -->
+        </div>
+    </div>
+   
+</body>
+<script src="script.js"></script>
+</html>
